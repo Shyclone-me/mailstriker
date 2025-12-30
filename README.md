@@ -1,2 +1,53 @@
 # mailstriker
 This is my first project as cybersecurity student. this is not homework or not assignment i was just exploring and i found this as simple that i can do. done in first week of first semester
+# 🌀 MAILSTRIKE – Email-Based Remote Control & Screenshot Tool (Windows)
+
+**MAILSTRIKE** is a Python-based remote control utility that allows you to securely control **your own Windows system** using email commands.  
+It can display popup messages, capture screenshots, and perform a graceful shutdown — all triggered via Gmail.
+
+> ⚠️ **Educational & Personal Use Only**  
+> This project is intended for learning, automation, and personal system control.  
+> Do **NOT** use this on systems you do not own or have explicit permission to access.
+
+---
+
+## ✨ Features
+
+- 📬 Email-based remote command execution
+- 🖥️ Capture and receive live screenshots via email
+- 🔔 Display native Windows popup messages
+- ⏻ Graceful system shutdown with delay
+- 🔐 Sender email verification for basic security
+- 🪟 Designed specifically for **Windows OS**
+
+---
+
+## 📌 Supported Commands (Email Subject)
+
+| Subject        | Action |
+|---------------|--------|
+| `check`        | Shows a popup with the email body message |
+| `show screen`  | Takes a screenshot and emails it back |
+| `shutdown`     | Initiates a delayed system shutdown |
+
+---
+
+## 🛠️ Requirements
+
+- **Windows OS**
+- **Python 3.8+**
+- Gmail account with **App Password enabled**
+- Internet connection
+
+### Python Libraries Used
+- `imaplib`
+- `smtplib`
+- `email`
+- `Pillow`
+- `ctypes`
+- `os`
+- `time`
+
+Install Pillow if not already installed:
+```bash
+pip install pillow
