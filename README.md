@@ -1,4 +1,4 @@
-# mailstriker
+# Mailstriker
 This is my first project as cybersecurity student. this is not homework or not assignment i was just exploring and i found this as simple that i can do. done in first week of first semester
 # 🌀 MAILSTRIKE – Email-Based Remote Control & Screenshot Tool (Windows)
 
@@ -51,3 +51,68 @@ It can display popup messages, capture screenshots, and perform a graceful shutd
 Install Pillow if not already installed:
 ```bash
 pip install pillow
+
+⚙️ Configuration
+
+Edit the USER CONFIGURATION section in the script:
+
+YOUR_EMAIL   = "your_email@gmail.com"
+APP_PASSWORD = "your_gmail_app_password"
+SENDER_EMAIL = "authorized_sender@gmail.com"
+
+
+Use a Gmail App Password, not your real Gmail password
+
+Only emails from SENDER_EMAIL will be accepted as commands
+
+🚀 How It Works
+
+The script continuously checks your Gmail inbox
+
+Reads unseen emails
+
+Verifies sender email
+
+Executes actions based on the email subject
+
+Sends responses (like screenshots) back via SMTP
+
+🧠 Security Notes
+
+Uses Gmail App Password (safer than raw credentials)
+
+Sender email validation prevents random command execution
+
+Designed for personal device control only
+
+Not stealthy or hidden by default
+
+🔒 For advanced security, consider:
+
+Encrypted commands
+
+Token-based authentication
+
+Running as a Windows service
+
+Using IMAP labels instead of inbox scanning
+
+📂 Project Structure
+MAILSTRIKE/
+│
+├── mailstrike.py
+├── README.md
+
+🧪 Tested On
+
+Windows 10
+
+Windows 11
+
+Python 3.10+
+
+🧑‍💻 Author
+
+shyclone
+Cybersecurity Student
+December 2025
