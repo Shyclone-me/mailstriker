@@ -48,9 +48,7 @@ It can display popup messages, capture screenshots, and perform a graceful shutd
 - `os`
 - `time`
 
-Install Pillow if not already installed:
-```bash
-pip install pillow
+
 
 ⚙️ Configuration
 
@@ -116,3 +114,7 @@ Python 3.10+
 shyclone
 Cybersecurity Student
 December 2025
+
+Install Pillow if not already installed:
+```bash
+pip install pillow
